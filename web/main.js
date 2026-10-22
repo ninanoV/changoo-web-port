@@ -8,6 +8,7 @@ import { isSurfaceKind, surfaceSprite } from './surfaces.js';
 import { eventNpcSprite, eventPlayerSprites, EVENT_SOUNDS } from './events.js';
 import { introSprites, INTRO_SOUNDS } from './intro.js';
 import { INVENTORY_IMAGES, INVENTORY_LABELS } from './inventory.js';
+import { drawScore } from './score.js';
 import { companionSprite, dogSprite } from './companions.js';
 import { MINIGAME_ASSETS } from './minigames.js';
 import { FRESH_MINIGAME_UNLOCKS, FRESH_STAGE_COUNT, loadUnlocks, saveUnlocks, loadStageProgress, enterSavedStage } from './progress.js';
@@ -320,6 +321,7 @@ function drawWorld(bosses) {
   } else if (player.invulnerable % 5 === 0) drawSprite(playerSprite(player), player.x - camera.x, player.y - camera.y, !player.facing);
   drawSprite(dogSprite(world.dog), world.dog.screenX, world.dog.screenY);
   for (let i = 0; i < player.lives; i++) drawSprite('life.app', 110 + i * 50, 420);
+  drawScore(player.points, drawSprite);
 }
 
 function loadStage(number, weaponTest = false) {
