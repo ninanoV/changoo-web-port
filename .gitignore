@@ -12,6 +12,12 @@ node_modules/
 /.codex/
 /.agents/
 /*.iso
-/Changoo (E)/
+/Changoo (E)/*
+!/Changoo (E)/RESOURCE.RES
+!/Changoo (E)/RESOURCE/
+/Changoo (E)/RESOURCE/*
+!/Changoo (E)/RESOURCE/CHAR.CFG
+!/Changoo (E)/RESOURCE/*.WAV
+/_site/
 /test/.*-probe.test.js
 /test/.*-explore.test.js
