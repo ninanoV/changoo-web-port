@@ -1,0 +1,2 @@
+// Original final-boss attacks99/67: 0x448110 and 0x446480.
+export const FINAL_BOSS_SHOTS = {"99":{"initial":{"x":6500,"y":1200,"width":36,"height":7,"frame":0,"ticks":0,"count":2,"period":4,"oldX":6500,"oldY":1200,"vx":8,"vy":0,"facing":1,"removed":false},"body":[0,0,10,10],"images":["tana1.app","tana2.app"]},"67":{"initial":{"x":6463,"y":1150,"width":134,"height":108,"oldX":6463,"oldY":1150,"vx":0,"vy":0,"ticks":0,"removed":false},"body":[-6,-12,127,114],"images":["shoke.app"]}};

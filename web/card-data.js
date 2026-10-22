@@ -1,0 +1,3 @@
+// Extracted from SHIN.EXE card loader 0x41c510 and portal 0x414970.
+export const CARD_ASSETS = {"palette":"shin.pal","background":"cardbg.app","cards":["card01.app","card02.app","card03.app","card04.app","card05.app","card06.app","card07.app","card08.app","card09.app"],"back":"card00.app","cursor":"cardarw.app","life":"cardlife.app","correct":"EAT.WAV","incorrect":"FAIL.WAV","positions":[[68,60],[153,60],[238,60],[323,60],[408,60],[493,60],[68,182],[153,182],[238,182],[323,182],[408,182],[493,182],[68,304],[153,304],[238,304],[323,304],[408,304],[493,304]],"lifePositions":[[10,10],[10,30],[10,50],[10,70]]};
+export const CARD_PORTAL = {"kind":126,"name":"gamecard.app","body":[0,0,79,91],"width":72,"height":96};

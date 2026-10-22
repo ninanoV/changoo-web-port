@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+node_modules/
+.venv/
+.env
+.env.*
+!.env.example
+*.log
+/sites/
+/.openai/
+/.codex/
+/.agents/
+/*.iso
+/Changoo (E)/
+/test/.*-probe.test.js
+/test/.*-explore.test.js

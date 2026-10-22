@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#201d24">
+  <title>짱구는 못말려</title>
+  <link rel="stylesheet" href="web/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div><p class="eyebrow">1997 · CLASSIC GAME</p><h1>짱구는 못말려</h1></div>
+      <p class="edition"><span id="stage-label">첫 스테이지</span><br><strong>게임 플레이</strong></p>
+    </header>
+    <section class="cabinet" aria-label="게임">
+      <div class="screen">
+        <canvas id="game" width="640" height="480" tabindex="0" aria-label="짱구 게임 화면. 좌우 이동, 위 점프, Space 공격 또는 특수동작, 슈팅에서는 방향키 이동과 Space 3연사, 부스터에서는 방향키 이동과 Space 발사, 스테이지 진입 연출은 Space로 건너뛰기, Enter 아이템 선택 또는 대화 건너뛰기, 선택 화면에서 위아래 이동, 자동차는 좌우 차선 이동. 깃발은 위 흰 깃발 올리기, 왼쪽 흰 깃발 내리기, 오른쪽 청 깃발 올리기, 아래 청 깃발 내리기. 두더지는 방향키 칸 이동, Space 망치, F6 복귀. 카드는 방향키 카드 이동, Space 뒤집기. 퍼즐은 방향키로 조각을 빈칸으로 밀기. 메뉴는 방향키 선택, Enter 확인, Space로 스테이지와 미니게임 전환, Esc 뒤로. 본편에서 Esc 일시정지."></canvas>
+        <div id="cover" class="cover"><div><p id="cover-stage" class="eyebrow">STAGE 01</p><h2 id="cover-title">짱구는 못말려</h2><p id="cover-message">게임을 준비하고 있어요.</p><button id="play" disabled>게임 시작</button></div></div>
+      </div>
+      <p id="hud" class="hud" role="status">목숨 5 · 초코비 0 · 캔 0 · 점수 0</p>
+      <div class="toolbar"><p id="status" role="status">리소스 로딩 중</p><div><button id="pause" disabled>일시정지</button><button id="reset" disabled>처음부터</button> <button id="menu" disabled>메인 메뉴</button><button id="sound" aria-pressed="true">소리 끄기</button><button id="fullscreen">전체 화면</button></div></div>
+    </section>
+    <div class="under-game"><p><kbd>←</kbd> <kbd>→</kbd> 이동 <kbd>↑</kbd> 점프 <kbd>Space</kbd> 공격·특수동작 <kbd>Enter</kbd> 아이템 선택·대화 건너뛰기 <kbd>Esc</kbd> 일시정지</p></div>
+    <div hidden>
+      <button id="encounter" disabled>첫 적 구간에서 시작</button>
+      <button id="weapon-preview" disabled>2스테이지 공격 아이템 구간</button>
+      <button id="boss-preview" disabled>첫 보스 구간에서 시작</button>
+      <button id="car-preview" disabled>자동차 미니게임 앞</button>
+      <button id="flag-preview" disabled>깃발 미니게임 앞</button>
+      <button id="mole-preview" disabled>두더지 미니게임 아래</button>
+      <button id="cave-preview" disabled>2스테이지 동굴 구간</button>
+      <button id="dialogue-preview" disabled>2스테이지 대사 구간</button>
+      <button id="second-boss-preview" disabled>2스테이지 보스 앞으로</button>
+      <button id="flight-preview" disabled>슈팅 전투 검증</button>
+      <button id="flight-boss-preview" disabled>슈팅 보스 앞으로</button>
+      <button id="booster-preview" disabled>부스터 이동·발사 검증</button>
+      <button id="booster-boss-preview" disabled>부스터 보스 앞으로</button>
+      <button id="jungle-preview" disabled>정글 진입·낙하 검증</button>
+      <button id="jungle-enemy-preview" disabled>정글 적 구간 검증</button>
+      <button id="jungle-spring-preview" disabled>정글 첫 스프링 앞</button>
+      <button id="jungle-bridge-preview" disabled>정글 다리 위</button>
+      <button id="jungle-boss-preview" disabled>정글 보스 앞으로</button>
+      <button data-stage-preview="ice" disabled>6스테이지 시작</button>
+      <button data-stage-preview="iceBridge" disabled>6스테이지 발판</button>
+      <button data-stage-preview="iceRock" disabled>6스테이지 돌</button>
+      <button data-stage-preview="iceEnemy" disabled>6스테이지 공룡·스프링</button>
+      <button data-stage-preview="iceBat" disabled>6스테이지 박쥐</button>
+      <button data-stage-preview="card" disabled>카드 미니게임 앞</button>
+      <button data-stage-preview="iceDialogue" disabled>6스테이지 대사</button>
+      <button data-stage-preview="iceExit" disabled>6스테이지 종료 앞</button>
+      <button data-stage-preview="final" disabled>마지막 스테이지 시작</button>
+      <button data-stage-preview="finalEnemy" disabled>마지막 스테이지 적</button>
+      <button data-stage-preview="finalFire" disabled>마지막 스테이지 불</button>
+      <button data-stage-preview="puzzle" disabled>퍼즐 미니게임 앞</button>
+      <button data-stage-preview="finalDialogue" disabled>마지막 스테이지 대사</button>
+      <button data-stage-preview="finalBoss" disabled>마지막 보스 위 발판</button>
+      <button data-stage-preview="finalEnding" disabled>엔딩·크레딧 확인</button>
+      <p id="progress-status" role="status"></p>
+    </div>
+  </main>
+  <script type="module" src="web/main.js"></script>
+</body>
+</html>

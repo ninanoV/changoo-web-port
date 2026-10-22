@@ -1,0 +1,2 @@
+// Original final movie 0x449350/0x4493e0 and credits 0x4413e0/0x441450.
+export const ENDING = {"sequence":[0,1,2,3,4,5,6,7,8,7,8,7,8,7,8,7,8,7,8,7,8,7,8],"durations":[300,300,300,300,300,300,2000,300,300],"images":["end01.app","end02.app","end03.app","end04.app","end05.app","end06.app","end07.app","noul01.app","noul02.app"],"background":"evframe.app","overlay":"airplane.app","startSounds":[{"name":"AIR.WAV","loop":false}],"startCd":["play cdaudio from 11 to 12"],"credits":["fuck-1.app","fuck-3.app","fuck-2.app"]};

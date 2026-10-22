@@ -1,0 +1,3 @@
+// Extracted from native mole loader 0x43ce00 and portal loader 0x43aaf0.
+export const MOLE_ASSETS = {"palette":"mole.pal","moles":["mole.app","mole_dam.app"],"backgrounds":["board1.app","board2.app","board3.app","board4.app"],"hammer":["hammer1.app","hammer2.app","hammer3.app"],"timeDigits":["n1-0.app","n1-1.app","n1-2.app","n1-3.app","n1-4.app","n1-5.app","n1-6.app","n1-7.app","n1-8.app","n1-9.app"],"scoreDigits":["n2-0.app","n2-1.app","n2-2.app","n2-3.app","n2-4.app","n2-5.app","n2-6.app","n2-7.app","n2-8.app","n2-9.app"],"timeDigitWidth":52,"scoreDigitWidth":54,"hitSound":"PUNCH2.WAV","musicCommand":"play cdaudio from 12 to 13"};
+export const MOLE_PORTAL = {"kind":87,"name":"mole_m.app","width":79,"height":91};

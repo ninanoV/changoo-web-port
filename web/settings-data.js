@@ -1,0 +1,2 @@
+// Original settings 0x44ae60/0x42f9a0/0x4405c0/0x4212c0.
+export const SETTINGS = {"options":{"background":"tt0001.app","choices":["ssc1.app","ssc2.app"]},"speed":{"background":"tt0001.app","choices":["ssc4.app","ssc3.app"],"confirm":"BONUS.WAV"},"scroll":{"background":"scroll.app","choices":["scrolla.app","scrollb.app"]},"slider":{"background":"tt0001.app","labels":["begin.app","expert.app"],"bar":"graph.app","fill":"graph1.app","confirm":"BONUS.WAV"}};
